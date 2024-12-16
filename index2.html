@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магнолия</title>
+    <link rel="icon" href="./img/фавикон.png" />
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="logo">
+            <img src="img/лого.png" alt="Логотип" class="magnolia">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Главная</a></li>
+                <li><a href="./index2.html">Услуги</a></li>
+                <li><a href="./index3.html">Личный кабинет</a></li>
+            </ul>
+        </nav>
+        <div class="contact-info">
+            <!-- <img src="img/tel.png" alt="Магнолия" class="magnolia"> -->
+            <p class="tel">+7 495 123-45-64</p>
+        </div>
+    </header>
+
+    <!-- Главный блок -->
+    <section class="main-banner">
+        <div class="flowers">
+            <img src="img/магнолия лево.png" alt="Цветок магнолии" class="left-flower">
+            <img src="img/магнолия право.png" alt="Цветок магнолии" class="right-flower">
+        </div>
+        <div>
+            <h1>НАШИ УСЛУГИ</h1>
+            <p class="text30">Скидка 20% новым клиентам на любую услугу при записи онлайн</p>
+            <button id="scrollButton" class="btn text25">Записаться</button>
+            <script src="buttom.js"></script>
+        </div>
+    </section>
+
+     <!-- УСЛУГИ -->
+     <section>
+        <script src="services.js"></script>
+        <div class="menu">
+            <a onclick="showService('brows')" class="tab-button">Брови</a>
+            <a onclick="showService('makeup')" class="tab-button">Макияж</a>
+            <a onclick="showService('haircut')" class="tab-button">Стрижки</a>
+            <a onclick="showService('spa')" class="tab-button">Спа-уход</a>
+            <a onclick="showService('nails')" class="tab-button">Ногтевой сервис</a>
+        </div>
+
+            <!-- Контент секций услуг -->
+        <div id="brows" class="service-section">
+                <div class="service">
+                <p>Оформление бровей</p>
+                <span>400р</span>
+                </div>
+                <div class="service">
+                    <p>Коррекция/Окрашиваие</p>
+                    <span>700р</span>
+                </div>
+                <div class="service">
+                    <p>Ламинирование без окрашивания/коррекции</p>
+                    <span>800р</span>
+                </div>
+                <div class="service">
+                <p>Мужская коррекция</p>
+                <span>500р</span>
+                </div>
+                <div class="service">
+                    <p>Ламинирование коррекция + окрашивание</p>
+                    <span>1100р</span>
+                </div>
+                <div class="service">
+                    <p>Ламинирование коррекция + окрашивание + ботокс</p>
+                    <span>1200р</span>
+                </div>
+            </div>
+            
+        </div>
+
+        <div id="makeup" class="service-section">
+            <div class="service">
+                <p>Вечерний макияж</p>
+                <span>1500р</span>
+            </div>
+            <div class="service">
+                <p>Дневной макияж</p>
+                <span>1000р</span>
+            </div>
+            <div class="service">
+                <p>Мужской макияж</p>
+                <span>1100р</span>
+            </div>
+            <div class="service">
+                <p>Выпускной макияж</p>
+                <span>1800р</span>
+            </div>
+            <div class="service">
+                <p>Возрастной макияж</p>
+                <span>1600р</span>
+            </div>
+            <div class="service">
+                <p>Детский макияж</p>
+                <span>900р</span>
+            </div>
+        </div>
+
+        <div id="haircut" class="service-section">
+            <div class="service">
+                <p>Женская стрижка</p>
+                <span>1400р</span>
+            </div>
+            <div class="service">
+                <p>Мужская стрижка</p>
+                <span>1000р</span>
+            </div>
+            <div class="service">
+                <p>Мужской стрижка + оформление бороды</p>
+                <span>2000р</span>
+            </div>
+            <div class="service">
+                <p>Укладка на щипцы волны/кудри</p>
+                <span>2000р</span>
+            </div>
+            <div class="service">
+                <p>Окрашивание/Контуринг</p>
+                <span>4000р</span>
+            </div>
+            <div class="service">
+                <p>Мелирование/Air-Touch</p>
+                <span>6000р</span>
+            </div>
+        </div>
+
+        <div id="spa" class="service-section">
+            <div class="service">
+                <p>Глубокая реконструкция для поврежденных волос</p>
+                <span>4000р</span>
+            </div>
+            <div class="service">
+                <p>Спа уход с глубоким очищением кожи головы</p>
+                <span>3500р</span>
+            </div>
+            <div class="service">
+                <p>Спа уход для кудрявых волос</p>
+                <span>2500р</span>
+            </div>
+            <div class="service">
+                <p>Интенсивное восстановление и уплотнение волос</p>
+                <span>3000р</span>
+            </div>
+            <div class="service">
+                <p>Ботокс/Кератин</p>
+                <span>4000р</span>
+            </div>
+            <div class="service">
+                <p>Экранирование волос</p>
+                <span>2000р</span>
+            </div>
+        </div>
+
+        <div id="nails" class="service-section">
+            <div class="service">
+                <p>Маникюр аппаратный без покрытия</p>
+                <span>700р</span>
+            </div>
+            <div class="service">
+                <p>Маникюр аппаратный с покрытием</p>
+                <span>1200р</span>
+            </div>
+            <div class="service">
+                <p>Маникюр  аппаратный с наращиванием </p>
+                <span>2000р</span>
+            </div>
+            <div class="service">
+                <p>Педикюр аппаратный</p>
+                <span>1800р</span>
+            </div>
+            <div class="service">
+                <p>Услуга подолога</p>
+                <span>1500р</span>
+            </div>
+            <div class="service">
+                <p>Массаж рук</p>
+                <span>700р</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ОНЛАЙН-ЗАПИСЬ -->
+    <section id="online" class="online">
+        <div>
+            <h2 class="booking-form1">Онлайн - Запись</h2>
+            <div class="form-image">
+                <img src="img/женщина.png" alt="Фото девушки">
+            </div>
+        </div>
+        
+        <div class="booking-form">
+            <form class="form">
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="name" placeholder="Введите ваше имя">
+    
+                <label for="phone">Номер телефона</label>
+                <input type="tel" id="phone" name="phone" placeholder="+7 495 123-45-67">
+    
+                <label for="service">Услуга</label>
+                <select id="service" name="service">
+                    <option value="">Выберите услугу</option>
+                    <option value="service1">Маникюр  аппаратный 
+                        без покрытия</option>
+                    <option value="service2">Маникюр  аппаратный 
+                        с покрытием </option>
+                    <option value="service3">Маникюр  аппаратный 
+                        с наращиванием </option>
+                    <option value="service4">Педикюр 
+                        аппаратный </option>
+                    <option value="service5">Услуга
+                        подолога</option>
+                    <option value="service6">Массаж
+                        рук</option>
+                </select>
+    
+                <label for="date">Дата</label>
+                <input type="date" id="date" name="date">
+    
+                <label for="time">Время</label>
+                <input type="time" id="time" name="time">
+                <div class="btn-btn">
+                    <button type="submit" class="submit-btn">Записаться</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Подвал сайта -->
+    <footer>
+        <div class="logo">
+            <img src="img/лого.png" alt="Логотип" class="magnolia">
+        </div>
+        <p>Адрес: <br> г. Пенза, ул.Московская, д.71</p>
+        <p>Время работы: <br> с 9:00 до 20:00</p>
+        <p> Телефон: <br>+7 495 123-45-64</p>
+    </footer>
+</body>
+</html>
