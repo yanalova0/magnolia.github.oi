@@ -1,0 +1,683 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+@font-face {
+    font-family: 'Ambidexter';
+    src: url('fonts/Ambidexter.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Baskervillebtrusbyme';
+    src: url('fonts/Baskervillebtrusbyme.woff') format('woff');
+    font-style: normal;
+}
+
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+    font-family: 'Alegreya';
+    line-height: 1.6;
+    background-color: #FFFFFB;
+    color: #4d2b16;
+}
+section{
+    margin: 160px 0px 100px 0px;
+}
+
+header {
+    margin: 30px auto 0 auto; /* для того что бы шапка была посередине */
+    width: 80%; /* для адаптивного размера */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    border-radius: 50px;
+    background-color: #5e4435;
+    color: #fff;
+}
+
+.magnolia {
+    width: 150px;
+    height: 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a,
+footer p {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.tel {
+    font-size: 16px;
+}
+
+.text40 {
+    font-size: 25px;
+}
+
+.text30 {
+    font-size: 23px;
+}
+
+.text20 {
+    font-size: 15px;
+}
+
+.text25 {
+    font-size: 20px;
+}
+
+.main-banner {
+    margin-top: 40px;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #FFFFFB;
+}
+
+.main-banner h1{
+    font-family: 'Ambidexter', serif;
+    font-weight: normal;
+    font-size: 80px;
+}
+
+/* .flowers {
+    position: relative;
+    text-align: center;
+    padding: 50px 0;
+} */
+
+.left-flower {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 450px; /* Размер картинки */
+    margin-top: 40px;
+}
+
+.right-flower {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    width: 450px; /* Размер картинки */
+    margin-top: 40px;
+}
+
+.main-banner h1,
+.heading{
+    color:#5e4435 ;
+}
+
+.main-banner h1{
+    margin: 30px 30px 0px 30px ;
+}
+
+.main-banner-text{
+    letter-spacing: 7px;
+    margin-top: -26px;
+    margin-bottom: 35px;
+}
+
+.btn {
+    font-family: 'Alegreya';
+    display: inline-block;
+    padding: 5px 40px;
+    margin: 30px;
+    background-color: #F6D3D3;
+    color: #000;
+    box-shadow: 5px 5px 35px #de8888;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.btn:hover {
+    font-family: 'Alegreya';
+    display: inline-block;
+    padding: 5px 40px;
+    margin: 30px;
+    background-color: #fce9e9;
+    color: #000;
+    box-shadow: 5px 5px 32px #ffd7d7;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.heading {
+    text-align: center;
+    margin: 20px;
+    font-family: 'Baskervillebtrusbyme', serif;
+    font-weight: normal;
+    font-size: 40px;
+}
+
+
+footer {
+    background-color: #5e4435;
+    padding: 60px 200px;
+    margin-top: 120px;
+    color: #fff;
+    /* height: 200px; */
+    display: flex;
+    justify-content: space-between;
+    /* margin: 10px auto 0 auto; */
+}
+
+/* УСЛУГИ */
+
+/* Стили для кнопок вкладок */
+.menu {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.tab-button {
+    font-family: 'Alegreya', serif;
+    padding: 10px 15px;
+    margin: 0 5px;
+    /* border-bottom: 3px #EFC1C7 ; */
+    font-size: 23px;
+    color:#5e4435;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tab-button:hover {
+    font-family: 'Alegreya', serif;
+    padding: 10px 15px;
+    margin: 0 5px;
+    font-size: 23px;
+    color:#EFC1C7 ;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Стили для секций услуг */
+.service-section {
+    display: none;
+    /* display: flex; */
+    justify-content:space-between ;
+    /* margin-bottom: 40px; */
+    padding: 50px 20px;
+    margin: 10px auto 0 auto;
+    width: 60%;
+}
+
+.service {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0; /* Отступ между услугами */
+    border-bottom: 1px dotted #000000;
+}
+
+
+
+
+
+/* ОНЛАЙН-ЗАПИСЬ */
+.online{
+    background-color: #FFF6F6;
+    position: relative;
+    /* width: 80%; */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(img/Vector-online.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* padding: 30px; */
+    border-radius: 15px;
+    width: 60%;
+    height: 30%;
+    padding: 20px;
+    margin: 10px auto 0 auto;
+    /* text-align: left; */
+    font-family: 'Alegreya', serif;
+    font-weight: normal;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.online h2{
+    font-family: 'Ambidexter', serif;
+    font-weight: normal;
+    align-items: center;
+    font-size: 55px;
+    color:#5e4435;
+    border-radius: 15px;
+}
+
+.booking-form {
+    width: 80%;
+    border-radius: 10px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    /* flex-direction: column; */
+}
+
+.booking-form1{
+    justify-content:center;
+    margin-bottom: 300px;
+    margin-left: 20px;
+    align-items: center;
+    width: 450px;
+    /* font-size: 80px; */
+}
+
+.form-image{
+    margin-bottom: -10px;
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+}
+
+.booking-form form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 8px;
+    color: #5e4435;
+}
+
+.booking-form form input,
+.booking-form form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #6D4934;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.booking-form .date-time {
+    display: flex;
+    justify-content: space-between;
+}
+
+.booking-form .date-time div {
+    width: 48%;
+}
+
+.btn-btn {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.submit-btn {
+    width: 50%;
+    padding: 10px;
+    background-color: #F6D3D3;
+    color: #000000;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 17px;
+    box-shadow: 5px 5px 35px  #de8888;
+    font-family: 'Alegreya';
+    text-decoration: none;
+}
+
+@media (max-width: 1220px) {
+    body {
+        min-height: 100vh;
+    }
+
+    section{
+        margin: 8vw 0px;
+    }
+
+    .magnolia {
+        width: 13vw;
+        /* height: 30px; */
+    }
+
+    nav ul li a,
+    footer p {
+    font-size: 1.4vw;
+    }
+
+    .tel {
+        font-size: 1.5vw;
+    }
+
+    .text40 {
+        font-size: 1.8vw;
+    }
+    
+    .text30 {
+        /*font-size: 25px;*/
+         font-size: 2vw;
+    }
+    
+    .text20 {
+    /*    font-size: 18px;
+    */     font-size: 1.2vw;
+    }
+    
+    .text25 {
+        font-size: 1.5vw;
+    }
+
+    .heading {
+        font-size: 3.4vw;
+    }
+
+    .main-banner h1{
+        font-size: 7.5vw;    
+    }
+
+    .left-flower {
+        top: 50px;
+        width: 27vw; /* Размер картинки */
+        margin-top: 40px;
+    }
+    
+    .right-flower {
+
+        top: 50px;
+        width: 27vw; /* Размер картинки */
+        margin-top: 40px;
+    }
+
+    .btn {
+        font-size: 1.6vw
+    }
+
+    .btn:hover {
+        font-size: 1.6vw;
+    }
+
+ /* ОНЛАЙН-ЗАПИСЬ */
+ .online{
+    background-color: #FFF6F6;
+    position: relative;
+    /* width: 80%; */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(img/Vector-online.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* padding: 30px; */
+    border-radius: 15px;
+    width: 60%;
+    height: 30%;
+    padding: 20px;
+    margin: 10px auto 0 auto;
+    /* text-align: left; */
+    font-family: 'Alegreya', serif;
+    font-weight: normal;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.online h2{
+    font-family: 'Ambidexter', serif;
+    font-weight: normal;
+    align-items: center;
+    font-size: 45px;
+    color:#5e4435;
+    border-radius: 15px;
+}
+
+.booking-form {
+    width: 80%;
+    border-radius: 10px;
+    margin-left: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    /* flex-direction: column; */
+}
+
+.booking-form1{
+    justify-content:center;
+    margin-bottom: 300px;
+    margin-left: 20px;
+    align-items: center;
+    width: 450px;
+    /* font-size: 80px; */
+}
+
+.form-image{
+    margin-bottom: -10px;
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+}
+
+.form-image>img{
+    width: 430px;
+}
+
+.booking-form form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 8px;
+    color: #5e4435;
+}
+
+.booking-form form input,
+.booking-form form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #6D4934;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.booking-form .date-time {
+    display: flex;
+    justify-content: space-between;
+}
+
+.booking-form .date-time div {
+    width: 48%;
+}
+
+.btn-btn {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.submit-btn {
+    width: 50%;
+    padding: 10px;
+    background-color: #F6D3D3;
+    color: #000000;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 5px 5px 35px  #de8888;
+    font-family: 'Alegreya';
+    text-decoration: none;
+}
+}
+
+@media (max-width: 1117px) {
+    .online{
+        width: 80%;
+    }
+
+    footer {
+        padding: 60px 100px;
+        margin-top: 120px;
+    }
+}
+
+@media (max-width:830px) {
+    header {
+        padding: 10px 50px;
+        height: 30px;
+    }
+
+    .online{
+        width: 75%;
+    }
+
+    .form-image>img{
+        width: 340px;
+    }
+
+    .online h2{
+        font-size: 30px;
+        margin: 0;
+        /* padding-left: 80px; */
+
+    }
+
+    .booking-form1{
+        margin-bottom: 0px;
+        margin-left: 0px;
+        width: 225px;
+    }
+
+    /* .booking-form {
+        margin-left: -150px;
+    } */
+
+    .magnolia {
+        width: 84px;
+        height: 22px;
+    }
+
+    .tab-button {
+        padding: 10px 10px;
+        margin: 0 5px;
+        /* border-bottom: 3px #EFC1C7 ; */
+        font-size: 18px;
+    }
+    
+    .tab-button:hover {
+        padding: 10px 10px;
+        margin: 0 5px;
+        font-size: 18px;
+    }
+
+    .service>p{
+        font-size: 8px;
+    }
+
+    .service-section{
+        padding: 20px 10px;
+    }
+
+    .online{
+        /* margin-top: 0px; */
+        display: flex;
+        align-items: center; /* Вертикальное центрирование */
+        justify-content: center; /* Горизонтальное центрирование */
+        flex-direction: column;
+        width: 50vw;
+}
+
+    .form-image>img{
+        display: none;
+    }
+
+    .form{
+        font-size: 12px;
+    }
+
+    @media (max-width:570px) {
+        nav ul li a,
+        footer p {
+        font-size: 8px;
+    }
+
+    header {
+        padding: 15px 30px;
+        height: 30px;
+    }
+
+        .magnolia{
+            display: none;
+        }
+
+        .left-flower{
+            display: none;
+        }
+
+        .right-flower{
+            display: none;
+        }
+
+        .main-banner {
+            margin-top: 20px;
+            text-align: center;
+            padding: 20px 20px;
+            background-color: #FFFFFB;
+        }
+        
+        /* .main-banner h1{
+            font-family: 'Ambidexter', serif;
+            font-weight: normal;
+            font-size: 40px;
+            margin-bottom: -20px;
+        } */
+    
+        .main-banner-text{
+            margin-top: -15px;
+            margin-bottom: 15px;
+        }
+
+        .tab-button{
+            font-size: 11px;
+        }
+
+        .tab-button:hover {
+            font-size: 11px;
+        }
+
+        .booking-form form input,
+        .booking-form form select {
+        font-size: 8px;
+}
+
+    .submit-btn{
+    font-size: 11px;
+}
+
+        .service{
+            font-size: 8px;
+        }
+
+        .online h2{
+            width: 150px;
+            font-size: 20px;
+        }
+
+        footer {
+            background-color: #5e4435;
+            padding: 40px 80px;
+            margin-top: 80px;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            /* margin: 10px auto 0 auto; */
+        }
+    }    
+}
