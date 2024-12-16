@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магнолия</title>
+    <link rel="icon" href="./img/фавикон.png" />
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="logo">
+            <img src="img/лого.png" alt="Логотип" class="magnolia">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Главная</a></li>
+                <li><a href="/index2.html">Услуги</a></li>
+                <li><a href="/index3.html">Личный кабинет</a></li>
+            </ul>
+        </nav>
+        <div class="contact-info">
+            <!-- <img src="img/tel.png" alt="Магнолия" class="magnolia"> -->
+            <p class="tel">+7 495 123-45-64</p>
+        </div>
+    </header>
+
+    <section>
+        <div class="personal-account">
+
+            <div class="pers-foto">
+                <div id="circle"></div>
+                <button class="btn">Загрузить фото</button>
+            </div>
+
+            <div class="info">
+                <div id="name">
+                    <p class="name pers-info">Имя:</p>
+                    <p class="pers-name pers">Анна</p>
+                </div>
+                <div id="surname">
+                    <p class="surname pers-info">Фамилия:</p>
+                    <p class="pers-surname pers">Сидорова</p>
+                </div>
+                <div id="tel">
+                    <p class="tel pers-info">Номер телефона:</p>
+                    <p class="pers-tel pers">+7 495 123-45-64</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="records">
+            <script src="delete.js"></script>
+            <div>
+                <p class="activ-rec">Действующие записи</p>
+                <div id="records">
+                    
+                    <div class="record">
+                        <p><button class="delete-btn" onclick="deleteRecord(this)">
+                            ✖
+                            <span class="tooltip">отменить запись</span>
+                        </button>
+                        Педикюр аппаратный </p>
+                        <p>24.10.2024</p>
+                        <p class="">18:00</p>
+                    </div>
+    
+                    <div class="record">
+                        <p class="">
+                            <button class="delete-btn" onclick="deleteRecord(this)">
+                                ✖
+                                <span class="tooltip">отменить запись</span>
+                            </button>
+                            Оформление бровей</p>
+                        <p>24.10.2024</p>
+                        <p class="">17:00</p>
+                    </div>
+            </div>
+                <div class="button-container">
+                    <a href="/услуги/index2.html" class="btn">Перейти к услугам</a>
+                </div>
+            </div>
+    </section>
+
+    <!-- Подвал сайта -->
+    <footer>
+        <div class="logo">
+            <img src="img/лого.png" alt="Логотип" class="magnolia">
+        </div>
+        <p>Адрес: <br> г. Пенза, ул.Московская, д.71</p>
+        <p>Время работы: <br> с 9:00 до 20:00</p>
+        <p> Телефон: <br>+7 495 123-45-64</p>
+    </footer>
+</body>
+</html>
