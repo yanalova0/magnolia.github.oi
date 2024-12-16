@@ -1,0 +1,979 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+@font-face {
+    font-family: 'Ambidexter';
+    src: url('fonts/Ambidexter.woff') format('woff'); /* для современных браузеров */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Baskervillebtrusbyme';
+    src: url('fonts/Baskervillebtrusbyme.woff') format('woff'); /* для современных браузеров */
+    font-style: normal;
+}
+
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+    font-family: 'Alegreya';
+    line-height: 1.6;
+    background-color: #FFFFFB;
+    color: #4d2b16;
+}
+section{
+    margin: 140px 0px;
+}
+
+header {
+    margin: 30px auto 0 auto; /* для того что бы шапка была посередине */
+    width: 80%; /* для адаптивного размера */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 100px;
+    border-radius: 50px;
+    background-color: #5e4435;
+    color: #fff;
+}
+
+.magnolia {
+    width: 220px;
+    height: 47px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a,
+footer p {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+}
+
+.tel {
+    font-size: 22px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text40 {
+    font-size: 25px;
+} 
+
+.text30 {
+    /*font-size: 25px;*/
+     font-size: 1.7vw;
+}
+
+.text20 {
+/*    font-size: 18px;
+*/     font-size: 1vw;
+}
+/* Фиксированный размер шрифта для малых экранов */
+/* @media (max-width: 600px) {
+   .text30 {
+        font-size: 25px; 
+    }
+    .text20 {        
+        font-size: 20px; 
+    }
+} */
+
+.text25 {
+    font-size: 25px;
+}
+
+.main-banner {
+    margin-top: 40px;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #FFFFFB;
+}
+
+.main-banner h1{
+    font-family: 'Ambidexter', serif;
+    font-weight: normal;
+    font-size: 120px;
+    margin-bottom: -20px;
+
+}
+
+.left-flower {
+    position: absolute;
+    left: 0;
+    top: 90px;
+    width: 550px; /* Размер картинки */
+}
+
+.right-flower {
+    position: absolute;
+    right: 0;
+    top: 90px;
+    width: 550px; /* Размер картинки */
+}
+
+.main-banner h1,
+.heading,
+.heading-contac-text{
+    color:#5e4435 ;
+}
+
+.main-banner h1{
+    margin: 30px 30px 0px 30px ;
+}
+
+.main-banner-text{
+    letter-spacing: 7px;
+    margin-top: -26px;
+    margin-bottom: 35px;
+}
+
+.btn {
+    font-family: 'Alegreya';
+    display: inline-block;
+    padding: 5px 40px;
+    margin: 30px;
+    background-color: #F6D3D3;
+    color: #000;
+    box-shadow: 5px 5px 35px #de8888;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.btn:hover {
+    font-family: 'Alegreya';
+    display: inline-block;
+    padding: 5px 40px;
+    margin: 30px;
+    background-color: #fce9e9;
+    color: #000;
+    box-shadow: 5px 5px 32px #ffd7d7;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.heading {
+    text-align: center;
+    margin: 0px 20px 20px 20px;
+    font-family: 'Baskervillebtrusbyme', serif;
+    font-weight: normal;
+    font-size: 60px;
+}
+
+.about,
+.advantages,
+.reviews,
+.contacts {
+    padding: 100px 20px;
+    margin: 10px auto 0 auto;
+    width: 80%;
+}
+
+.about, 
+.advantages,
+.contact,
+.rev{
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {
+    width: 40vw;
+    height: 400;
+    /* margin: 10px auto 0px auto; */
+    padding-left: 40px;
+
+}
+
+.text p{
+    margin: 12px;
+
+}
+
+/* .about-text p{
+    padding: 10px;
+} */
+
+.image {
+    max-width: 100%; /* Изображение не будет шире родительского элемента */
+    height: auto;    /* Автоматическая высота для сохранения пропорций */
+    margin: 20px;
+}
+
+.image > img {
+    display: block;
+    width: 550px;
+}
+
+.rev{
+    display: flex;
+    justify-content: center;
+}
+
+.review {
+    border: 2px;
+    background-color: #A18C7E;
+    color: #fff;
+    border-radius: 50px;
+    width: 15vw;
+    height: 17vw;
+    padding: 20px;
+    margin: 20px 30px;
+    
+}
+
+.review h3 {
+    text-align: center;
+}
+
+.advantages ul {
+    list-style: none;
+}
+
+.advantages ul li {
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.advantages-number {
+    font-family: 'Ambidexter', serif;
+    font-weight: normal;
+    font-size: 40px;
+    margin: 20px;
+    color:#6D4934;
+}
+
+.advantages-text{
+    display: flex;
+    align-items: center; /* Вертикальное центрирование */
+    justify-content: center; /* Горизонтальное центрирование */
+    flex-direction: column;
+}
+
+.heading-contac-text{
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+.contact{
+    margin-top: 50px;
+    /* align-items: center; /* Вертикальное центрирование */
+    /* justify-content: center;  */
+}
+
+.contac-text{
+    margin-top: 50px;
+}
+
+.map>iframe {
+    width: 620px;
+    height: 370px 
+}
+
+footer {
+    background-color: #5e4435;
+    padding: 60px 200px;
+    margin-top: 120px;
+    color: #fff;
+    /* height: 200px; */
+    display: flex;
+    justify-content: space-between;
+    /* margin: 10px auto 0 auto; */
+}
+
+
+/* СЛАЙДЕР*/
+.reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 20px 0; 
+}
+.slider-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 90%; 
+    width: 100%; 
+    margin: 0 auto; 
+    overflow: hidden;
+}
+.slider-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.review {
+    min-width: 35%;  /*можно изменить ширину каждой карточки */
+    box-sizing: border-box; 
+    padding: 15px; 
+    margin: 0 0 0 35px; 
+}
+.slider-btn {
+    font-size: 2rem;
+    background: white;
+    border: none; 
+    color: #4b2e26;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 30;
+    padding: 10px; 
+    width: 35px; 
+    height: 315px; 
+}
+.prev {
+    left: 0; 
+}
+.next {
+    right: 0; 
+}
+
+/* ФОРМА */
+.btn-btn{
+    text-align: center;
+}
+
+/* Основные стили для всплывающей формы */
+.popup-form {
+    display: none; /* Скрыта по умолчанию */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Стили содержимого формы */
+.form-content {
+    background-color: #FFF6F6;
+    background-image: url(img/Vector-form.png);
+    padding: 10px;
+    border-radius: 15px;
+    width: 500px;
+    max-width: 90%;
+    height: 650px;
+    /* max-height: 100%;
+    max-width: 90%; */
+    position: relative;
+    text-align: left;
+    font-family: 'Alegreya', serif;
+    font-weight: normal;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Заголовок и поля формы */
+.form-content h2 {
+    text-align: center;
+    margin-bottom: 12px;
+    color: #4b2e26;
+    /* font-size: 60px; */
+}
+
+.form-content label {
+    /* font-size: 30px; */
+    font-weight: bold;
+    display: block;
+}
+
+.form-content input,
+.form-content select {
+    /* font-size: 25px; */
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    /* text-align: center; */
+    width: 50%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #F6D3D3;
+    color: #000000;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 5px 5px 35px  #de8888;
+    font-family: 'Alegreya';
+    text-decoration: none;
+}
+
+/* Стили для кнопки закрытия */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #281a1a;
+}
+
+@media (max-width: 1920px) {
+
+    .form-content h2 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 1700px) {
+    .magnolia {
+        width: 200px;
+        height: 40px;
+    }
+
+    .left-flower {
+        width: 460px; /* Размер картинки */
+    }
+    
+    .right-flower {
+        width: 460px; /* Размер картинки */
+    }
+
+    .main-banner h1{
+        font-size: 100px;
+    }
+
+    .heading {
+        font-size: 50px;
+    }
+
+    .about,
+    .advantages,
+    .reviews,
+    .contacts {
+        width: 87%;
+    }
+
+    .text25 {
+        font-size: 22px;
+    }
+
+    nav ul li a,
+    footer p {
+        font-size: 22px;
+    }
+
+    .image > img {
+        display: block;
+        width: 455px;
+    }
+
+}
+
+
+@media (max-width: 1300px) {
+    body {
+        min-height: 100vh;
+    }
+
+    section{
+        margin: 8vw 0px;
+    }
+
+    .magnolia {
+        width: 13vw;
+        /* height: 30px; */
+    }
+
+    nav ul li a,
+    footer p {
+    font-size: 1.4vw;
+    }
+
+    .tel {
+        font-size: 1.5vw;
+    }
+
+    .text40 {
+        font-size: 1.8vw;
+    }
+    
+    .text30 {
+        /*font-size: 25px;*/
+         font-size: 2vw;
+    }
+    
+    /* .text20 {
+     font-size: 1.2vw;
+    } */
+    
+    .text25 {
+        font-size: 1.5vw;
+    }
+
+    .heading {
+        font-size: 3.4vw;
+    }
+
+    .main-banner h1{
+        font-size: 7.5vw;   
+    }
+
+    .left-flower {
+        top: 50px;
+        width: 27vw; /* Размер картинки */
+        margin-top: 40px;
+    }
+    
+    .right-flower {
+
+        top: 50px;
+        width: 27vw; /* Размер картинки */
+        margin-top: 40px;
+    }
+
+    .btn {
+        font-size: 1.6vw
+    }
+
+    .btn:hover {
+        font-size: 1.6vw;
+    }
+
+    .about,
+    .advantages,
+    .reviews,
+    .contacts {
+    width: 90%;
+    }
+
+    .text {
+        
+        height: 10vw;    
+    }
+
+    .image {
+        margin: 20px;
+    }
+
+    .image > img {
+        display: block;
+        width: 395px;
+    }
+
+    /* .review {
+        width: 15vw;
+        height: 17vw;
+        margin: 20px 30px;
+    } */
+
+    .advantages ul li {
+        margin-bottom: 10px;
+        font-size: 1.5vw;
+    }
+
+    .advantages-number {
+        font-size: 2.2vw;
+    }
+
+    .form-content {
+        width: 450px;
+        max-width: 90%;
+        height: 600px;
+    }
+
+    .form-content h2 {
+        font-size: 35px;
+        margin-bottom: 12px;
+    }
+
+    .form-content label {
+        font-size: 20px;
+    }
+
+    .form-content input,
+    .form-content select {
+        margin-top: 0.6px;
+        margin-bottom: 0;
+    font-size: 16px;
+}
+
+    .submit-btn {
+        margin-top: 25px;
+        font-size: 1.6vw;
+    }
+
+    .map>iframe {
+        width: 550px;
+        height: 350px 
+    }
+        
+}
+
+@media (max-width: 1000px) {
+    /* форма */
+    /* .form-content {
+        height: 200px;
+    } */
+
+    body {
+        min-height: 100vh;
+    }
+
+    /* section{
+        margin: 2vw 0px;
+    } */
+
+    .magnolia {
+        width: 11vw;
+        height: 27px;
+    }
+
+    nav ul li a,
+    footer p {
+    font-size: 1.4vw;
+    }
+
+    .tel {
+        font-size: 1.5vw;
+    }
+
+    .text40 {
+        font-size: 2.3vw;
+    }
+    
+    .text30 {
+        /*font-size: 25px;*/
+         font-size: 2vw;
+    }
+    
+    /* .text20 {
+        font-size: 1.4vw;
+    } */
+    
+    .text25 {
+        font-size: 1.5vw;
+    }
+
+    .heading {
+        font-size: 3.4vw;
+    }
+
+    .main-banner h1{
+        font-size: 7.5vw;    
+    }
+
+    .left-flower {
+        top: 50px;
+        width: 27vw; /* Размер картинки */
+        margin-top: 40px;
+    }
+    
+    .right-flower {
+
+        top: 50px;
+        width: 27vw; /* Размер картинки */
+        margin-top: 40px;
+    }
+
+    .btn {
+        font-size: 1.6vw
+    }
+
+    .btn:hover {
+        font-size: 1.6vw;
+    }
+
+    .about,
+    .advantages,
+    .reviews,
+    .contacts {
+        padding: 50px 20px;
+        width: 90%;
+    }
+
+    .text {
+        height: 10vw;    
+    }
+
+    .image {
+        margin: 20px;
+    }
+
+    .image > img {
+        display: block;
+        width: 320px;
+    }
+
+    /* .about-text p {
+        padding: 7px;
+    } */
+
+    /* .review {
+        min-width: 250px;
+        max-width: 250px;
+        min-height: 200px;
+        max-height: 200px;
+    }
+
+    .review {
+        margin: 20px 15px;
+    } */
+
+    .advantages ul li {
+        margin-bottom: 10px;
+        font-size: 1.5vw;
+    }
+
+    .advantages-number {
+        font-size: 2.2vw;
+    }
+
+    /* .form-content h2 {
+        margin-bottom: 12px;
+    }
+
+    .submit-btn {
+        margin-top: 15px;
+        font-size: 1.6vw;
+    } */
+
+    .map>iframe {
+        width: 450px;
+        height: 250px 
+    }
+
+    footer {
+        padding: 60px 100px;
+    }
+        
+}
+
+@media (max-width: 774px) {
+
+    /* до 700 */
+    section{
+        margin: -40px 0px;
+    }
+
+    .map>iframe {
+        width: 400px;
+        height: 220px 
+    }
+
+    .image > img {
+        display: block;
+        width: 230px;
+    }
+
+    .magnolia {
+        display:none;
+    }
+
+    header {
+        padding: 15px 70px;
+        height: 30px;
+    }
+
+    .tel{
+        font-size: 10px;
+    }
+
+    .about, 
+    .advantages, 
+    .reviews, 
+    .contacts {
+        padding: 25px 20px;
+    }
+
+    .contact{
+        margin-top: 0px;
+        display: flex;
+        align-items: center; /* Вертикальное центрирование */
+        justify-content: center; /* Горизонтальное центрирование */
+        flex-direction: column;
+}
+
+    .contac-text{
+    margin-top: 0;
+    margin-bottom: 30px;
+    display: flex;flex-direction: column;
+}
+
+    .main-banner {
+        margin-top: 20px;
+        text-align: center;
+        padding: 20px 20px;
+        background-color: #FFFFFB;
+    }
+    
+    .main-banner h1{
+        font-family: 'Ambidexter', serif;
+        font-weight: normal;
+        font-size: 40px;
+        margin-bottom: -20px;
+    }
+
+    .main-banner-text{
+        margin-top: -15px;
+        margin-bottom: 15px;
+    }
+
+    /* .review {
+        min-width: 200px;
+        max-width: 200px;
+        min-height: 150px;
+        max-height: 150px;
+    } */
+
+    footer {
+        padding: 20px 80px;
+        margin-top: 60px;
+    }
+
+@media (max-width: 600px) {
+
+    .image > img {
+        display:none;
+        width: 100px;
+    }
+
+    .about, 
+    .advantages, 
+    .reviews, 
+    .contacts {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .about{
+        margin-bottom: 70px;
+    }
+
+    .advantages{
+        margin-bottom: -40px;
+    }
+
+    .text {
+        /* width: 350px; */
+        height: 50;
+        /* margin: 10px auto 0px auto; */
+        padding-left: 0px;
+    
+    }
+    .text>p {
+        width: 260px;
+        margin-left: -30px;
+    }
+
+    /* .review {
+        min-width: 180px;
+        max-width: 180px;
+        min-height: 100px;
+        max-height: 100px;
+    } */
+
+    }
+
+    @media (max-width: 480px) {
+        header {
+            padding: 15px 30px;
+            height: 30px;
+        }
+
+        .about{
+            margin-bottom: 100px;
+        }
+
+        .text>p {
+            margin-left: -13px;
+            font-size: 8px;
+            width: 230px;
+        }
+
+        .main-banner h1{
+            margin-top: 0;
+        }
+
+        .main-banner-text{
+            margin-top: 10px;
+        }
+
+        .map>iframe {
+            width: 250px;
+            height: 150px 
+        }
+
+        nav ul li a,
+        footer p {
+        font-size: 8px;
+    }
+
+    .tel {
+        font-size: 8px;
+    }
+
+    .text40 {
+        font-size: 10px;
+    }
+    
+    .advantages ul li {
+        font-size: 8px;
+    }
+
+    .text30 {
+        /*font-size: 25px;*/
+         font-size: 9px;
+    }
+    
+    .text20 {
+    /*    font-size: 18px;
+    */     font-size: 1.4vw;
+    }
+    
+    .text25 {
+        font-size: 8px;
+    }
+    }
+
+    @media (max-width:380px) {
+        .left-flower {
+            display: none;
+        }
+
+        .right-flower {
+            display: none;
+        }
+
+        .text>p {
+            margin-left: -30px;
+    }
+
+    footer {
+        padding: 20px 40px;
+        margin-top: 40px;
+    }
+    
+}
+
+  }
